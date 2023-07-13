@@ -53,6 +53,17 @@ p {
   margin-top: 60px;
 }
 
+.Two-column {
+  display: flex;
+}
+
+.right {
+  width: 50%;
+}
+.left {
+  width: 50%;
+}
+
 /* ----------------------------------------------------------------
 	Font
 -----------------------------------------------------------------*/
@@ -73,6 +84,33 @@ p {
   left: 0;
   bottom: -4px;
   width: 100%;
+  height: 7px;
+  background: -webkit-repeating-linear-gradient(
+    -45deg,
+    #6ad1c8,
+    #6ad1c8 2px,
+    #fff 2px,
+    #fff 4px
+  );
+  background: repeating-linear-gradient(
+    -45deg,
+    #6ad1c8,
+    #6ad1c8 2px,
+    #fff 2px,
+    #fff 4px
+  );
+}
+
+.title-half {
+  position: relative;
+}
+
+.title-half:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 96%;
   height: 7px;
   background: -webkit-repeating-linear-gradient(
     -45deg,
