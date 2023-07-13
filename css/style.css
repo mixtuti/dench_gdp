@@ -430,6 +430,13 @@ header {
   font-size: 0.8rem;
 }
 
+.pf-list .pf.pc-win,
+.pf-list .pf.pc-mac {
+  background: #107c10;
+  padding: 3px 10px;
+  font-size: 0.8rem;
+}
+
 .pf {
   padding: 5px 0 5px 0;
 }
