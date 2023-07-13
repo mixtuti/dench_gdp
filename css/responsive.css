@@ -176,4 +176,15 @@
     margin-bottom: min(0.3333333333vw, 6px);
     white-space: nowrap;
   }
+
+  .pf-list .pf.vr {
+    background: #0068bf;
+    padding: 3px 10px;
+  }
+
+  .pf-list .pf.ios,
+  .pf-list .pf.android {
+    background: #333;
+    padding: 3px 10px;
+  }
 }

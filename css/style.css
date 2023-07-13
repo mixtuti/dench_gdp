@@ -420,12 +420,14 @@ header {
 .pf-list .pf.vr {
   background: #0068bf;
   padding: 3px 10px;
+  font-size: 0.8rem;
 }
 
 .pf-list .pf.ios,
 .pf-list .pf.android {
   background: #333;
   padding: 3px 10px;
+  font-size: 0.8rem;
 }
 
 .pf {
