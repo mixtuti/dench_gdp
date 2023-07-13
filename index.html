@@ -19,15 +19,47 @@
         <meta name="”keywords”" content="”大阪電気通信大学,電ch!,ゲーム開発”">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
-        <link rel="icon" href="./img/favicon_400x400.jpg" />
+        <link rel="icon" href="img/favicon_400x400.jpg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_400x400.jpg">
         <!-- Stylesheets -->
-        <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_400x400.jpg">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="css/responsive.css" type="text/css">
         <!-- Document Title -->
         <title>【電ch!】GameDevProject - TOP</title>
     </head>
     <body>
-        <header>
+        <header class="header">
+            <!-- Header Logo -->
+            <div class="logo">
+                <a href="#"><p>【電ch!】GameDevProject</p></a>
+            </div>
 
+            <!-- Menu -->
+            <div id="hamburger">
+                <div class="icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <nav class="nav sm">
+                <ul>
+                    <li><a href="#">TOP</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">WORKS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <nav class="nav pc">
+                <ul>
+                    <li><a href="#">TOP</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">WORKS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
         </header>
         <main>
 
@@ -35,5 +67,8 @@
         <footer>
 
         </footer>
+        <!-- jQuery JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/menu.js"></script>
     </body>
 </html>
