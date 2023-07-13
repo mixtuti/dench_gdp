@@ -11,6 +11,8 @@
   - Footer
   - Slider
   - Works
+  - Movie
+  - Background
 
 -----------------------------------------------------------------------------------*/
 
@@ -85,6 +87,10 @@ iframe {
 -----------------------------------------------------------------*/
 .DotGothic16 {
   font-family: "DotGothic16", sans-serif;
+}
+
+.wf-sawarabimincho {
+  font-family: "Sawarabi Mincho";
 }
 
 /* ----------------------------------------------------------------
@@ -462,6 +468,9 @@ header {
   text-align: center;
 }
 
+/* ----------------------------------------------------------------
+	Movie
+-----------------------------------------------------------------*/
 .youtube_wrap {
   padding-top: 56.25%;
   width: 100%;
@@ -474,4 +483,139 @@ header {
   position: absolute;
   top: 0px;
   left: 0px;
+}
+
+/* ----------------------------------------------------------------
+	Background
+-----------------------------------------------------------------*/
+.higaki {
+  background: linear-gradient(
+      135deg,
+      #c44e37 21px,
+      #fff 22px,
+      #fff 24px,
+      transparent 24px,
+      transparent 67px,
+      #fff 67px,
+      #d9ecff 69px,
+      transparent 69px
+    ),
+    linear-gradient(
+        225deg,
+        #c44e37 21px,
+        #fff 22px,
+        #fff 24px,
+        transparent 24px,
+        transparent 67px,
+        #fff 67px,
+        #fff 69px,
+        transparent 69px
+      )
+      0 64px;
+  background-color: #c44e37;
+  background-size: 64px 128px;
+}
+
+.seigaiha {
+  background-color: #c44e37;
+  background-image: radial-gradient(
+      circle at 100% 150%,
+      #c44e37 24%,
+      #fff 24%,
+      #fff 28%,
+      #c44e37 28%,
+      #c44e37 36%,
+      #fff 36%,
+      #fff 40%,
+      transparent 40%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 0 150%,
+      #c44e37 24%,
+      #fff 24%,
+      #fff 28%,
+      #c44e37 28%,
+      #c44e37 36%,
+      #fff 36%,
+      #fff 40%,
+      transparent 40%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 50% 100%,
+      #fff 10%,
+      #c44e37 10%,
+      #c44e37 23%,
+      #fff 23%,
+      #fff 30%,
+      #c44e37 30%,
+      #c44e37 43%,
+      #fff 43%,
+      #fff 50%,
+      #c44e37 50%,
+      #c44e37 63%,
+      #fff 63%,
+      #fff 71%,
+      transparent 71%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 100% 50%,
+      #fff 5%,
+      #c44e37 5%,
+      #c44e37 15%,
+      #fff 15%,
+      #fff 20%,
+      #c44e37 20%,
+      #c44e37 29%,
+      #fff 29%,
+      #fff 34%,
+      #c44e37 34%,
+      #c44e37 44%,
+      #fff 44%,
+      #fff 49%,
+      transparent 49%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 0 50%,
+      #fff 5%,
+      #c44e37 5%,
+      #c44e37 15%,
+      #fff 15%,
+      #fff 20%,
+      #c44e37 20%,
+      #c44e37 29%,
+      #fff 29%,
+      #fff 34%,
+      #c44e37 34%,
+      #c44e37 44%,
+      #fff 44%,
+      #fff 49%,
+      transparent 49%,
+      transparent
+    );
+  background-size: 50px 25px;
+}
+
+.sitihou {
+  background-color: #fff;
+  background-image: radial-gradient(closest-side, transparent 98%, #c44e37 99%),
+    radial-gradient(closest-side, transparent 98%, #c44e37 99%);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+}
+
+.white {
+  background-color: white;
+  margin-top: -30px;
+}
+
+.white h2 {
+  padding-left: 5px;
+}
+
+.ma {
+  padding-top: 30px;
 }
