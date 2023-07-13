@@ -18,7 +18,7 @@
         <meta name="twitter:image" content="https://mixtuti.github.io/dench_gdp/img/favicon_400x400.jpg" />
         <meta name="”keywords”" content="”大阪電気通信大学,電ch!,ゲーム開発”">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
+        <!-- Icon -->
         <link rel="icon" href="img/favicon_400x400.jpg" />
         <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_400x400.jpg">
         <!-- Stylesheets -->
@@ -26,6 +26,13 @@
         <link rel="stylesheet" href="css/responsive.css" type="text/css">
 
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+        <!-- Icon -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <!-- Document Title -->
         <title>【電ch!】GameDevProject - TOP</title>
     </head>
@@ -33,9 +40,11 @@
         <header class="header">
             <!-- Header Logo -->
             <div class="logo">
-                <a href="#"><p>【電ch!】GameDevProject</p></a>
+                <a href="#">
+                    <p class="DotGothic16">【電ch!】GameDevProject</p>
+                </a>
             </div>
-
+        
             <!-- Menu -->
             <div id="hamburger">
                 <div class="icon">
@@ -44,7 +53,7 @@
                     <span></span>
                 </div>
             </div>
-
+        
             <nav class="nav sm">
                 <ul>
                     <li><a href="#">TOP</a></li>
@@ -53,7 +62,7 @@
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </nav>
-
+        
             <nav class="nav pc">
                 <ul>
                     <li><a href="#">TOP</a></li>
@@ -63,6 +72,7 @@
                 </ul>
             </nav>
         </header>
+        
         <main class="top">
             <ul class="slider">
                 <li><img src="img/favicon_400x400.jpg" alt=""></li>
@@ -71,10 +81,29 @@
                 <li><img src="img/favicon_400x400.jpg" alt=""></li>
                 <li><img src="img/ElectricCollect.png" alt=""></li>
                 <li><img src="img/JapanSige.png" alt=""></li>
+                <!-- 念の為 -->
+                <li><img src="img/favicon_400x400.jpg" alt=""></li>
+                <li><img src="img/ElectricCollect.png" alt=""></li>
+                <li><img src="img/JapanSige.png" alt=""></li>
             </ul>
-        </main>
-        <footer>
 
+            <article>
+                <h2 class="title"><i class="fa fa-exclamation-circle"></i> ようこそ!<span>【電ch!】GameDevProject</span> へ</h2>
+
+                <p>大阪電気通信大学の学生がプロスタッフの協力で様々なデジタルコンテンツを制作するプロジェクト電ch!（でんチャン）のゲーム開発をするチームです。</p>
+            </article>
+        </main>
+
+        <footer id="footer" class="dark">
+            <div id="copyrights">
+                <div class="container clearfix">
+                    <div class="col_half">
+                        <!-- Copyrights　============================================= -->
+                        Copyrights &copy; 【電ch!】GameDevProject<br>
+                        <a href="./about/index.html">About This Project</a>
+                    </div>
+                </div>
+            </div>
         </footer>
         <!-- jQuery JavaScript -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
