@@ -10,6 +10,7 @@
   - Header
   - Footer
   - Slider
+  - Works
 
 -----------------------------------------------------------------------------------*/
 
@@ -46,6 +47,10 @@ p {
   text-indent: 1rem;
 }
 
+h5 {
+  margin: 2px;
+}
+
 /* ----------------------------------------------------------------
 	Main
 -----------------------------------------------------------------*/
@@ -55,11 +60,13 @@ p {
 
 .Two-column {
   display: flex;
+  width: 100%;
 }
 
 .right {
   width: 50%;
 }
+
 .left {
   width: 50%;
 }
@@ -327,4 +334,112 @@ header {
 
 .slider .slick-slide {
   margin: 0;
+}
+
+/* ----------------------------------------------------------------
+	Works
+-----------------------------------------------------------------*/
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.game-row {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+}
+
+.game {
+  width: calc(100% - 10px);
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden; /* 画像を親要素内にクリップ */
+}
+
+.game-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* 画像をトリミング */
+  aspect-ratio: 980/600; /* 比率を維持するためのアスペクト比 */
+}
+
+.game-info {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  height: 30%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.game:hover .game-info {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.game:hover .overlay {
+  opacity: 1;
+}
+
+.pf-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.game-info ul {
+  margin: 3px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.games .title-list.main > li .detail .info-box .pf-list .pf {
+  width: 15.58%;
+}
+
+.games .title-list .list .detail .info-box .pf-list .pf {
+  max-width: 7em;
+}
+
+.pf-list .pf.vr {
+  background: #0068bf;
+  padding: 3px 10px;
+}
+
+.pf-list .pf.ios,
+.pf-list .pf.android {
+  background: #333;
+  padding: 3px 10px;
+}
+
+.pf {
+  padding: 5px 0 5px 0;
+}
+
+.pf-list .pf {
+  color: #fff;
+  background: #333;
+  border-radius: 5em;
+  font-size: 0.2rem;
+  letter-spacing: normal;
+  line-height: 1;
+  margin-bottom: 1vw;
+  padding: 0.35em 0.5em;
+  text-align: center;
 }

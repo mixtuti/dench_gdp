@@ -5,6 +5,7 @@
 
   - Main
   - Header
+  - Works
 
 -----------------------------------------------------------------------------------*/
 
@@ -44,6 +45,10 @@
       #fff 2px,
       #fff 4px
     );
+  }
+
+  h5 {
+    margin: 2px;
   }
 }
 
@@ -114,5 +119,61 @@
   .nav a {
     text-align: center;
     border-top: solid 0.5px rgba(255, 255, 255, 0.6);
+  }
+}
+
+/* ----------------------------------------------------------------
+	Works
+-----------------------------------------------------------------*/
+@media (max-width: 600px) {
+  .gallery {
+    display: block;
+  }
+
+  .game {
+    width: 100%;
+  }
+
+  .game-info {
+    opacity: 1;
+    position: static;
+    background-color: transparent;
+    padding: 0;
+    transition: none;
+  }
+
+  .game:hover .overlay {
+    opacity: 0;
+    height: 0;
+  }
+
+  .game-info h3,
+  .game-info h5 {
+    color: black;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .games
+    .title-list.main
+    > li
+    .detail
+    .info-box
+    .pf-list
+    .pf:not(:nth-child(8n)) {
+    margin-right: 1%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .games .title-list.main > li .detail .info-box .pf-list .pf {
+    width: 15.58%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .pf-list .pf {
+    font-size: min(0.12rem, 12px);
+    margin-bottom: min(0.3333333333vw, 6px);
+    white-space: nowrap;
   }
 }
